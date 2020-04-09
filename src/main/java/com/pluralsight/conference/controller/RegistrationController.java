@@ -26,7 +26,7 @@ public class RegistrationController {
 
         //checking for errors
         if (result.hasErrors()){
-            System.out.println("There were eroors");
+            System.out.println("There were errors");
             return "registration"; //if errors return to the the form without redirecting
 
         }
