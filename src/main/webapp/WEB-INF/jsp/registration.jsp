@@ -11,11 +11,24 @@
 <html>
 <head>
     <title>Registration</title>
+    <style>
+        .error{
+            color: #ff0000;
+        }
+        .eerorblock{
+            color: #000;
+            background-color: aquamarine;
+            border: 1px solid #ff0000;
+            padding: 8px;
+            margin: 16px;
+        }
+    </style>
 </head>
 <body>
 <h1>Registration</h1>
 
 <form:form modelAttribute="registration">
+    <form:errors path="name" cssClass="eerorblock" element="div"/>
     <table>
         <tr>
             <td>
